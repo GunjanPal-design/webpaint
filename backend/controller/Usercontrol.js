@@ -27,7 +27,7 @@ const Login = (req, res) => {
             bcrypt.compare(password, user.password)
                 .then((isMatch) => {
                     if (!isMatch) {
-                        return res.json({ message: "Invalid email or password" });
+                        return res.json({ message: "Invalid email or passwordssssss" });
                     }
 
                     const token = jwt.sign({ id: user._id, email: user.email }, 'your-secret-key', {
